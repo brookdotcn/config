@@ -8,22 +8,48 @@
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Noir Poimandres Darker",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
 
   "workbench.colorCustomizations": {
-    "tab.border": "#202230",
-    "sideBar.border": "#202230",
+    "tab.border": "#3c3836",
     "scrollbar.shadow": "#0a0a0a",
-    "editor.background": "#14151e",
-    "tab.activeBorderTop": "#a6accd",
-    "tab.activeBackground": "#14151e",
-    "editorGutter.background": "#14151e",
-    "activityBarTop.foreground": "#a6accd",
-    "activityBarTop.activeBorder": "#14151e",
-    "sideBarActivityBarTop.border": "#202230",
-    "tab.unfocusedActiveBackground": "#14151e",
-    "tab.unfocusedActiveBorderTop": "#a6accd50",
-    "gitlens.trailingLineForegroundColor": "#a6accd50"
+    "editor.background": "#171a1b",
+    "tab.activeBorder": "#00000000",
+    "terminal.background": "#171a1b",
+    "tab.activeBorderTop": "#689d6a",
+    "tab.activeBackground": "#171a1b",
+    "editorGutter.background": "#171a1b",
+    "activityBarTop.foreground": "#d5c4a1",
+    "sideBarActivityBarTop.border": "#3c3836",
+    "tab.unfocusedActiveBackground": "#171a1b",
+    "activityBarTop.activeBorder": "#00000000",
+    "tab.unfocusedActiveBorderTop": "#689d6a50",
+    "gitlens.trailingLineForegroundColor": "#d5c4a150"
+
+    // these theme specific colours are also used across
+    // my terminal ANSI values for a consistent theme.
+    //
+    // <Developer: Generate Color Theme From Current Settings>
+    //
+    // "terminal.ansiRed": "#cc241d",
+    // "terminal.ansiCyan": "#689d6a",
+    // "terminal.ansiBlue": "#458588",
+    // "terminal.ansiBlack": "#3c3836",
+    // "terminal.ansiGreen": "#98971a",
+    // "terminal.ansiWhite": "#a89984",
+    // "terminal.ansiYellow": "#d79921",
+    // "terminal.foreground": "#ebdbb2",
+    // "terminal.ansiMagenta": "#b16286",
+    // "terminal.ansiBrightRed": "#fb4934",
+    // "terminal.ansiBrightBlue": "#83a598",
+    // "terminal.ansiBrightCyan": "#8ec07c",
+    // "terminal.ansiBrightGreen": "#b8bb26",
+    // "terminal.ansiBrightBlack": "#928374",
+    // "terminal.ansiBrightWhite": "#ebdbb2",
+    // "terminal.ansiBrightYellow": "#fabd2f",
+    // "terminal.ansiBrightMagenta": "#d3869b",
+    // "editor.selectionBackground": "#689d6a40"
   },
 
   "editor.fontWeight": "400",
@@ -34,7 +60,6 @@
   "editor.cursorStyle": "underline",
   "editor.lightbulb.enabled": "off",
   "editor.guides.indentation": false,
-  "workbench.tree.renderIndentGuides": "none",
   "editor.stickyScroll.enabled": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
