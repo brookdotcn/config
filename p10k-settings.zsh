@@ -12,10 +12,10 @@
 #   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
 # custom colours.
-local primary_colour=006
-local secondary_colour=005
-local tertiary_colour=004
-local danger_colour=001
+local primary_colour=002
+local secondary_colour=006
+local tertiary_colour=001
+local danger_colour=013
 
 # Temporarily change options.
 'builtin' 'local' '-a' 'p10k_config_opts'
