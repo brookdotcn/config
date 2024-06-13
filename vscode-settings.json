@@ -28,8 +28,7 @@
     "editorOverviewRuler.border": "#00000000",
     "sideBarActivityBarTop.border": "#3c3836",
     "tab.unfocusedActiveBackground": "#1c1c1c",
-    "activityBarTop.activeBorder": "#00000000",
-    "gitlens.trailingLineForegroundColor": "#d5c4a150"
+    "activityBarTop.activeBorder": "#00000000"
 
     // these theme specific colours are also used across
     // my terminal ANSI values for a consistent theme.
