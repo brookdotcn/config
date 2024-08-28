@@ -9,51 +9,7 @@
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Vitesse Dark Soft",
   "workbench.tree.renderIndentGuides": "none",
-
-  "workbench.colorCustomizations": {
-    "sideBar.border": "#3c3836",
-    "contrastBorder": "#3c3836",
-    "tab.activeBorder": "#4c9a91",
-    "scrollbar.shadow": "#0a0a0a",
-    "editor.background": "#1c1c1c",
-    "editorGroup.border": "#3c3836",
-    "terminal.background": "#1c1c1c",
-    "tab.activeBackground": "#1c1c1c",
-    "tab.activeBorderTop": "#00000000",
-    "editorGutter.background": "#1c1c1c",
-    "activityBarTop.foreground": "#bdbaaa",
-    "tab.unfocusedActiveBorder": "#4c9a9175",
-    "editorOverviewRuler.border": "#00000000",
-    "sideBarActivityBarTop.border": "#3c3836",
-    "tab.unfocusedActiveBackground": "#1c1c1c",
-    "activityBarTop.activeBorder": "#00000000"
-
-    // these theme specific colours are also used across
-    // my terminal ANSI values for a consistent theme.
-    //
-    // <Developer: Generate Color Theme From Current Settings>
-    //
-    // "terminal.ansiRed": "#cb7676",
-    // "terminal.ansiBlue": "#6394bf",
-    // "terminal.ansiCyan": "#5eaab5",
-    // "terminal.ansiGreen": "#4d9375",
-    // "terminal.ansiBlack": "#393a34",
-    // "terminal.ansiWhite": "#dbd7ca",
-    // "terminal.ansiYellow": "#e6cc77",
-    // "terminal.ansiMagenta": "#d9739f",
-    // "terminal.foreground": "#dbd7caee",
-    // "terminal.ansiBrightRed": "#cb7676",
-    // "terminal.ansiBrightBlue": "#6394bf",
-    // "terminal.ansiBrightCyan": "#5eaab5",
-    // "terminal.ansiBrightGreen": "#4d9375",
-    // "terminal.ansiBrightBlack": "#777777",
-    // "terminal.ansiBrightWhite": "#ffffff",
-    // "terminal.ansiBrightYellow": "#e6cc77",
-    // "terminal.ansiBrightMagenta": "#d9739f",
-    // "editor.selectionBackground": "#eeeeee18"
-  },
 
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
@@ -61,7 +17,6 @@
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Geist Mono",
   "editor.lightbulb.enabled": "off",
-  "editor.guides.indentation": false,
   "editor.stickyScroll.enabled": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
@@ -72,6 +27,7 @@
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
   "terminal.integrated.fontWeight": "400",
+  "extensions.ignoreRecommendations": true,
 
   "errorLens.fontWeight": "400",
   "gitlens.codeLens.enabled": false,
@@ -81,22 +37,18 @@
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "apc.electron": {
-    "trafficLightPosition": {
-      "x": 7.5,
-      "y": 10
-    },
     "titleBarStyle": "hiddenInset"
   },
   "apc.stylesheet": {
     ".title-label": "padding-left: 0 !important",
-    ".sidebar .composite-bar-container": "padding-left: 70px",
+    ".basepanel > .title": "padding-left: 0 !important",
     ".inline-titlebar-placeholder": "padding-left: 0 !important"
   },
 
-  "[mdx]": {
-    "editor.formatOnSave": false
-  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   }
 }
