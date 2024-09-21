@@ -70,10 +70,7 @@
     "terminal.ansi.bright_black": "#5C5C5C",
     "terminal.ansi.bright_yellow": "#FFC9A3",
     "terminal.ansi.bright_magenta": "#F3B8EC",
-    "scrollbar_thumb.background": "#dedcd510",
-    "scrollbar.track.background": "#00000000",
     "editor.active_line.background": "#292929",
-    "scrollbar.thumb.hover_background": "#dedcd550",
 
     // Vitesse Dark Soft https://zed-themes.com/themes/vitesse
     "element.background": "#222",
@@ -114,11 +111,11 @@
     }
   },
 
+  "scrollbar": { "show": "never" },
   "terminal": { "button": false },
   "chat_panel": { "button": false },
   "outline_panel": { "button": false },
   "project_panel": { "button": false },
-  "indent_guides": { "enabled": false },
   "notification_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "tab_bar": { "show_nav_history_buttons": false },
