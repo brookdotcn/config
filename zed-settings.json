@@ -6,8 +6,22 @@
   "autosave": "on_focus_change",
   "buffer_font_family": "Geist Mono",
 
+  "scrollbar": { "show": "never" },
+  "terminal": { "button": false },
+  "chat_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "project_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "tab_bar": { "show_nav_history_buttons": false },
+  "toolbar": { "breadcrumbs": false, "quick_actions": false },
+
+  "assistant": {
+    "version": "2",
+    "default_model": { "provider": "ollama", "model": "llama3.1:latest" }
+  },
+
   "experimental.theme_overrides": {
-    // Min Dark https://zed-themes.com/themes/min-theme
     "text": "#999999",
     "error": "#f97583",
     "border": "#2A2A2A",
@@ -35,6 +49,7 @@
     "terminal.ansi.cyan": "#79B8FF",
     "deleted.background": "#1A1A1A",
     "panel.background": "#00000000",
+    "element.background": "#2A2A2A",
     "editor.line_number": "#727272",
     "terminal.ansi.black": "#1A1A1A",
     "terminal.background": "#1A1A1A",
@@ -56,6 +71,7 @@
     "status_bar.background": "#1A1A1Ac0",
     "tab.inactive_background": "#1A1A1A",
     "terminal.ansi.dim_green": "#5A8AC0",
+    "drop_target.background": "#2A2A2A50",
     "terminal.ansi.bright_red": "#FF9CAA",
     "terminal.ansi.dim_yellow": "#D18F5A",
     "editor.gutter.background": "#1A1A1A",
@@ -69,12 +85,10 @@
     "terminal.ansi.bright_green": "#A3D0FF",
     "terminal.ansi.bright_black": "#5C5C5C",
     "terminal.ansi.bright_yellow": "#FFC9A3",
+    "elevated_surface.background": "#2A2A2A",
     "terminal.ansi.bright_magenta": "#F3B8EC",
     "editor.active_line.background": "#292929",
 
-    // Vitesse Dark Soft https://zed-themes.com/themes/vitesse
-    "element.background": "#222",
-    "elevated_surface.background": "#222",
     "syntax": {
       "tag": { "color": "#4d9375" },
       "type": { "color": "#5DA994" },
@@ -109,20 +123,5 @@
       "emphasis": { "color": "#dbd7caee", "font_style": "italic" },
       "emphasis.strong": { "color": "#dbd7caee", "font_weight": 700 }
     }
-  },
-
-  "scrollbar": { "show": "never" },
-  "terminal": { "button": false },
-  "chat_panel": { "button": false },
-  "outline_panel": { "button": false },
-  "project_panel": { "button": false },
-  "notification_panel": { "button": false },
-  "collaboration_panel": { "button": false },
-  "tab_bar": { "show_nav_history_buttons": false },
-  "toolbar": { "breadcrumbs": false, "quick_actions": false },
-
-  "assistant": {
-    "default_model": { "provider": "ollama", "model": "llama3.1:latest" },
-    "version": "2"
   }
 }
