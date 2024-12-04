@@ -69,7 +69,7 @@
     "element.background": "#4d937550",
     "terminal.ansi.yellow": "#FFAB70",
     "ghost_element.active": "#1F1F1F",
-    "status_bar.background": "#131313",
+    "status_bar.background": "#131313A0",
     "tab.active_background": "#131313",
     "background.appearance": "blurred",
     "terminal.ansi.dim_red": "#D15A68",
