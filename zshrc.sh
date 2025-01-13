@@ -1,16 +1,22 @@
-hour_min_sec="%F{240}%*%f"
-separator="::"
-current_directory="%F{blue}%1d%f"
-
 set_prompt() {
-  # Read the short, abbreviated name of the current git 'object'
-  # https://git-scm.com/docs/git-rev-parse#Documentation/git-rev-parse.txt---abbrev-refstrictloose
-  git_branch=$(if [ -d ".git" ]; then echo "$separator%F{magenta}$(git rev-parse --abbrev-ref HEAD)%f"; fi)
+  local hour_min_sec="%F{240}%*%f"
+  local separator="::"
+  local current_directory="%F{blue}%1d%f"
 
-  # Read the file names of all files in the diff, count the words, trim the whitespace
-  git_change_count=$(if [ -d ".git" ]; then echo "(%F{red}$(git diff --name-only | wc -w | tr -d ' ')%f)"; fi)
+  local git_branch
+  local git_changes
 
-  PROMPT="$hour_min_sec $current_directory$git_branch$git_change_count "
+  if [ -d ".git" ]; then
+    # Read the short, abbreviated name of the current git object
+    # https://git-scm.com/docs/git-rev-parse#Documentation/git-rev-parse.txt---abbrev-refstrictloose
+    git_branch=$(echo "$separator%F{magenta}$(git rev-parse --abbrev-ref HEAD)%f")
+
+    # Read the file names of all files in the diff, count the words, trim the whitespace & only show if non-zero
+    git_changes=$(git diff --name-only | wc -w | tr -d ' ')
+    git_changes=$(if [[ $git_changes != '0' ]]; then echo "(%F{red}$git_changes%f)"; fi)
+  fi
+
+  PROMPT="$hour_min_sec $current_directory$git_branch$git_changes "
 }
 
 setopt PROMPT_SUBST
