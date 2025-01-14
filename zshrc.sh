@@ -22,10 +22,10 @@ set_prompt() {
 setopt PROMPT_SUBST
 set_prompt
 
-# Refresh prompt on every directory change.
-# https://stackoverflow.com/a/17060679
-autoload -U add-zsh-hook
-add-zsh-hook chpwd set_prompt
+# Refresh prompt on every command.
+# https://github.com/rothgar/mastering-zsh/blob/master/docs/config/hooks.md#set-prompt-in-precmd
+typeset -a precmd_functions
+precmd_functions+=(set_prompt)
 
 # Command history search
 bindkey "^[f" history-beginning-search-forward # opt+left
